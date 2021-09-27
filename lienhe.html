@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIEN HE</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="js/slider.js">
+    <link rel="stylesheet"href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,100;1,200;1,400;1,500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<header>
+  
+  <video src="video/ip12.mp4" class="ip12-bg" autoplay loop muted></video>
+  <div class="nav-area">
+    <div class="logo">
+    <img src="images/fpt-shop.png" >
+  </div>
+    <ul class="menu-area">
+      <li><a href="trangchu.html">Trang chủ</a></li>
+      <li><a href="gioithieu.html">Giới thiệu</a></li>
+      <li><a href="sanpham.html">Sản phẩm</a> </li>
+      <li><a href="dangky.html">Đăng ký</a></li>
+      <li><a href="lienhe.html">Liên hệ</a></li>
+    </ul>
+  
+  </div>
+<div class="banner-text">
+  <h2>BLAST PAST FAST.</h2>
+  <p class="p1">5G speed. A14 Bionic, the fastest chip in a smartphone.
+    An edge-to-edge OLED display. Ceramic Shield with four times better drop performance. And Night mode on every camera. iPhone 12 has it all — in two perfect sizes.</p>
+  <a href="#" class="btn">Xem chi tiết</a>
+</div>
+
+</header>
+<!-- -------------------San Pham----------------- -->
+
+   <!-- --------- -->
+  <div class="contact">
+    <h2 class="h2text">Thông tin liên hệ</h2>
+    <p class="p2">Tên cửa hàng: FShop</p>
+    <p class="p3">Địa chỉ: 7 Phạm Thế Hiển Phường 7  Quận 8 TP.HCM</p>
+    <p class="p3">Gọi mua: 0362487447 - 03644558 </p>
+    <p class="p3">Bảo hành: 06325255 - 042354784 </p>
+    <p class="p3">Kỹ thuật: 03154242 - 073165151 </p>
+    <p class="p3">Khiếu nại: 051544247 - 063425844 </p>
+  </div>
+    <button id="getlocation">Go Location</button>
+    <img src="" id="mapImage">
+
+
+<!-- -------- testiml -->
+   
+<!-- footer -->
+<footer>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Dowload Our App</h3>
+        <p>Download App for Android and Ios mobile phone.</p>
+        <div class="app-logo">
+          <img src="images/play-store.png" >
+          <img src="images/app-store.png" >
+        </div>
+      </div>
+      <div class="footer-col-2">
+    <img src ="images/fpt-shop.png">
+        <p>Địa chỉ: 5 Phạm Thế Hiển Quận 8</p>
+        <p>Điện thoại: 123465789</p>
+      </div>
+      <div class="footer-col-3">
+        <h3>Dịch vụ</h3>
+       <ul>
+         <li>Giảm giá</li>
+         <li>Bài viết</li>
+         <li>Chính sách trả</li>
+         <li>Liên kết</li>
+       </ul>
+      </div>
+      <div class="footer-col-4">
+        <h3>Follow us</h3>
+       <ul>
+         <li>Facebook</li>
+         <li>Twitter</li>
+         <li> Instargam </li>
+         <li>YouTube</li>
+       </ul>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <p class="copyright">Copyright 2021 by Tran Hai Dong</p>
+</div>
+</footer>
+</body>
+</html>
+<script>
+navigator.geolocation.getCurrentPosition(function(position){
+  console.log(position.coords)
+},function( err){
+  console.log(err)
+})
+</script>
+

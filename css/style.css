@@ -1,0 +1,618 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo img{
+  margin: 0;
+  height: 70px;
+  float: left;
+
+  
+}
+body{
+ margin: 0;
+ padding : 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+  
+header{
+    overflow: hidden;
+    height: 100vh;
+}
+.ip12-bg{
+position: absolute;
+right:0;
+bottom:0;
+min-height: 100%;
+min-width: 100%;
+
+}
+.nav-area{
+    background:rgba(255, 165,0,0.8);
+    height: 60px;
+    position: absolute;
+    width: 100%;
+    position: fixed; /*Cho menu cố định 1 vị trí với top và left*/
+    top: 0; /*Nằm trên cùng*/
+    z-index: 9999999;
+}
+.menu-area{
+    float:right;
+    list-style: none;
+    margin:20px;
+ 
+}
+.menu-area li{
+    
+    display:inline-block;
+    margin: 0 5px;
+}
+.menu-area li a{
+    text-decoration:none;
+    color:#fff;
+    padding:5px 10px;
+    font-weight:bold;
+}
+.menu-area li a:hover{
+    color:red;
+}
+.banner-text{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+.banner-text h2{
+    color: #fff;
+    font-size:55px;
+    margin: 0;
+    text-shadow: 0 0 30px orange ;
+   
+}
+.banner-textp{
+    color: #fff;
+    font-size:18px;
+    margin: 0;
+    font-weight: bold;
+}
+.btn{
+    display:inline-block;
+    margin-top: 5%;
+    background: transparent;
+    border:0;
+    font-size:20px;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    padding:10px 25px;
+    color:#fff;
+    border-radius: 25px;
+    transition: 1s;
+}
+.btn2{ display:inline-block;
+    margin-top: 5%;
+    border:0;
+    font-size:15px;
+    text-transform: uppercase;
+    border: 3px solid red;
+    padding:5px 10px;
+  
+    border-radius: 25px;
+    transition: 1s;
+}
+.btn2:hover{
+    background:wheat;
+}
+.btn:hover{
+background: red;
+transform:scale(0.1s);
+}
+
+.container{
+    max-width:100% ;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px
+}
+.row{
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+ 
+}
+p{
+    text-align: center;
+}
+.p1{
+    text-align: center;
+    color: orange;
+    text-shadow: 0 0 30px orangered;
+
+}
+.col-2{
+    flex-basis: 50%;
+    min-width:300px;
+}
+.col-2 img{
+    max-width: 100%;
+    height:500px;
+    padding :50px 0;
+}
+.col-2 h1{
+    font-size:50px;
+    line-height:60px;
+    margin: 25px 0;
+}
+
+
+
+.categories{
+    margin: 70px 0;
+
+ 
+}
+
+
+.col-3{
+ flex-basis: 30%;
+ min-width: 250px;
+ margin-bottom: 30px;
+ overflow: hidden;/*gioi han*/
+position: relative;
+}
+.col-3 img{
+   width:100%;
+   
+}
+.small-container{
+    max-width: 1080px; 
+    margin: auto ;
+    padding-left: 25px;
+    padding-right: 25px;
+   
+}
+.col-4{
+    position: relative;
+    flex-basis:25%;
+    padding: 10px;
+    min-width:100px;
+    margin-bottom: 50px;
+    overflow: hidden;
+   
+   
+    
+}
+.col-4:hover{
+    transform:translate(5px);
+    transition:0.5s;
+}
+.col-4 img{
+    width: 235px;
+  height: 235px;
+  border:2px solid orange;
+  padding: 5px;
+  border-radius: 20px;
+}
+.col-5{
+    flex-basis:20%;
+    margin:0;
+    min-width:100px;
+ 
+  
+
+}
+.col-5 img{
+    width: 100px;
+     height: 100px;
+     margin: 0;
+     margin-left: 50px;
+ 
+ 
+
+
+}
+
+.title{
+    text-align: center;
+    margin:0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: "";
+    background:orange;
+    width:100px;
+    height:5px;
+    border-radius:5px;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+
+}
+
+h4{
+    color: #555;
+    font-weight: norml;
+    text-align: center;
+
+}
+h4:hover{
+    color:red;
+    transition:0.5s;
+    transform: translateX(5px);
+}
+.col-4 p{
+    font-size:14px;
+}
+.offer{
+    
+    margin-top: 5px;
+    padding: 30px 0;
+
+}
+.col-2 img{
+    padding: 80px;
+}
+.icon1{
+    position: absolute;
+    background-color:orange;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    z-index: 8;
+    transform: translateX(50px);
+    transition: 1s;
+    top:20px;
+    left: 210px;
+  
+
+}
+
+.icon2{
+    position: absolute;
+    background-color:orange;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    z-index: 8;
+    transform: translateX(50px);
+    transition: 1.5s;
+    top:60px;
+    left: 210px;
+   
+}
+.icon3{
+    position: absolute;
+    background-color:orange;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    z-index: 8;
+    transform: translateX(50px);
+    transition: 2s;
+    top:100px;
+    left: 210px;
+    
+}
+.col-4:hover .icon1{
+    transform: translateX(0);
+}
+.col-4:hover .icon2{
+    transform: translateX(0);
+}
+.col-4:hover .icon3{
+    transform: translateX(0);
+}
+.sao{
+    text-align: center;
+}
+/* hãng */
+.brands{
+    margin: 100px auto;
+}
+.col-6{
+    width:160px;
+}
+.col-6 img{
+    width:100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-6 img:hover{
+    filter:grayscale(0);
+}
+
+
+/* footer */
+
+.footer{
+    
+    background:orange;
+    color:black;
+    font-size:14px;
+    padding:60px 0 20px;
+}
+.footer p{
+color: black;
+}
+.footer h3{
+    color:black;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+min-width: 230px;
+margin-left: 10px;
+
+text-align: center;
+}
+.footer-col-1{
+    flex-basis: 20%;
+}
+.footer-col-2{
+    flex-basis: 20%;
+    text-align: center;
+}
+.footer-col-2 img{
+   width:180px;
+   margin-bottom: 20px;
+}
+ul{
+    list-style-type: none;
+
+}
+.app-logo{
+    margin-top: 20px;
+
+}
+.app-logo img{
+    width:100px;
+}
+.footer hr{
+    border:none;
+    background:black;
+    height:1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+
+.checked{
+    color: orange;
+}
+
+
+/* ---------------trang product */
+ .row-2{
+     justify-content:space-between;
+     margin: 100px auto 10px;
+ }
+ select{
+     border:1px solid orange;
+ }
+ select:focus{
+     outline: none;
+ }
+ .page-btn{
+     margin: 0 auto 80px;
+ }
+ .page-btn span{
+     display: inline-block;
+     border: 1px solid orange;
+     margin-left: 5px;
+     width: 40px;
+     height: 40px;
+     text-align: center;
+     line-height: 40px;
+     cursor: pointer;
+
+ }
+ .page-btn span:hover{
+background-color: red;
+
+ }
+
+ /* trang chi tiet */
+.single-product{
+    margin-top:50px;
+    border: 1px solid orange;
+    padding: 5px;
+    border-radius:25px
+
+}
+.single-product .col-2 img{
+    padding:0;
+    text-align: center;
+
+    
+}
+.single-product .col-2 {
+    padding: 5px;;
+    text-align: center;
+    
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size:22px;
+    font-weight:bold;
+    text-align: center;
+  
+}
+.text{
+    display: block;
+    color:  orange;
+    font-size:20px;
+    background-color: red;
+    font-weight:bold;
+    padding: 10px;
+    margin-right: 50px;
+    position: absolute;
+    border-radius: 25px;
+transition: 1s;
+transform:translateY(500px);
+text-align: center;
+}
+.col-3:hover .text{
+    transform:translateY(-150px);
+}
+.col-3:hover img{
+    transform: scale(0.9)/*ti le zoom*/ rotate(0.2deg);
+}
+
+
+
+
+/* trang gioi thieu */
+.hero{
+    background:#fff;
+    height:100vh;
+    position: relative;
+}
+.hero h1{
+    text-align: center;
+    padding-top: 80px;
+    font-size:50px;
+    color:  #555;
+}
+.slide-row{
+    display:flex;
+    width:32000px;
+    transition: 0.5s;
+}
+.slide-col{
+    width:800px;
+    height:400px;
+    position:relative;
+    }
+    .user-img{
+        position: absolute;
+        top:0;
+        right:0;
+        height:100%;
+        
+    }
+    .user-img img{
+        height:100%;
+        border-radius: 10px;
+    }
+    .user-text{
+        background:#2d3a59;
+        width:520px;
+        height:270px;
+        position:absolute;
+        left:0;
+        top:50%;
+        transform:translateY(-50%);
+        border-radius: 10px;
+        color: #d3d4d6;
+        padding: 45px;
+        box-sizing: border-box;
+        z-index: 2;
+    }
+.user-text p{
+    font-size:18px;
+    line-height:24px;
+}
+.use-text h3{
+    margin: 35px 0 5px;
+    color: #fff;
+}
+.container1{
+    width:800px;
+    height: 400px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.indicator{
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-50px;
+
+}
+.btn1{
+    display: inline-block;
+    height: 15px;
+    width:15px;
+    margin: 4px;
+    border-radius:15px;
+    background: #555;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.active{
+    width:45px;
+}
+.testimonial{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.h31{
+    text-align: center;
+}
+
+
+/* Trang lien he */
+.contact{
+  
+    text-align: center;
+    width:800px;
+    margin: 0 auto;
+    height: 800px;
+ 
+}
+.h2text{
+    text-align: center;
+    font-size: 50px;
+    color:#555;
+}
+.p2{
+    font-size:30px;
+    color:orange;
+   text-shadow: orangered;
+}
+.p3{
+    font-size:25px;
+    
+}
+
+
+
+/* -------------------- */
+@media only screen and (min-width:740px) and (max-width:1023px){
+    .menu-area{
+        position: absolute;
+        top:40px;
+        background: #333;
+        width:95%;
+         text-align: center;
+        display:block;
+        color: #fff;
+        padding: 10px;
+      
+    }
+    .col-3{
+      
+        flex-direction: column;
+    }
+    .col-4{
+       width:500px;
+  
+    }
+    .small-container{
+        width:500px;
+    }
+    
+}
+
+
+

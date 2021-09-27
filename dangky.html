@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAN PHAM</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="js/slider.js">
+    <link rel="stylesheet"href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,100;1,200;1,400;1,500&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<style>
+  .h11{
+    margin-top: 50px;
+      text-align: center;
+      color: #555;
+  }
+  
+  button{
+     margin-left: 220px;
+  }
+  textarea{
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 8px;
+    width: 540px;
+  }
+  form{
+      background-color: bisque;
+      border-radius: 20px;
+      }
+  
+  </style>
+<body ng-app="b3" ng-controller="ctr1">
+<header>
+  
+  <video src="video/ip12.mp4" class="ip12-bg" autoplay loop muted></video>
+  <div class="nav-area">
+    <div class="logo">
+    <img src="images/fpt-shop.png" >
+  </div>
+    <ul class="menu-area">
+      <li><a href="trangchu.html">Trang chủ</a></li>
+      <li><a href="gioithieu.html">Giới thiệu</a></li>
+      <li><a href="sanpham.html">Sản phẩm</a> </li>
+      <li><a href="dangky.html">Đăng ký</a></li>
+      <li><a href="lienhe.html">Liên hệ</a></li>
+    </ul>
+    <img src="images/menu.png" class="menu-icon">
+  </div>
+<div class="banner-text">
+  <h2>BLAST PAST FAST.</h2>
+  <p class="p1">5G speed. A14 Bionic, the fastest chip in a smartphone.
+    An edge-to-edge OLED display. Ceramic Shield with four times better drop performance. And Night mode on every camera. iPhone 12 has it all — in two perfect sizes.</p>
+  <a href="#" class="btn">Xem chi tiết</a>
+</div>
+
+</header>
+<!-- -------------------San Pham----------------- -->
+
+   <!-- --------- -->
+  
+    <h1 class="h11">Đăng kí thành viên</h1>
+    <form name="frm" class="col-5 mx-auto border border-primary">
+        <div class="form-group">
+            <label>Mã thành viên</label>
+            <input name="masv" class="form-control bg-primary" ng-model="masv" required minlength="2" maxlength="30">
+            <em ng-if="frm.masv.$invalid" class="text-danger h6">Nhập mã thành viên! </em>
+        </div>
+        <div class="form-group">
+            <label>Họ và Tên</label>
+            <input name="tensp" class="form-control bg-primary" ng-model="tensv" required minlength="2" maxlength="30">
+            <em ng-if="frm.tensp.$invalid" class="text-danger h6">Nhập tên thành viên !</em>
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input name="email" class="form-control bg-warning" ng-model="email" required type="email">
+            <em ng-if="frm.email.$invalid "class="text-danger h6">Nhập đúng định dạng @email !</em>
+        </div>
+        <div class="form-group">
+            <label>Giới tính</label>
+            <fieldset class="border border-secondary p-3">
+                <input name="gioitinh" type="radio" value="1" ng-model="gioitinh"> Nam &nbsp;
+                <input name="gioitinh" type="radio" value="2" ng-model="gioitinh"> Nữ
+                <em ng-if="!gioitinh" class="text-danger h6"><br>Chọn một giới tính !</em>
+            </fieldset>
+        </div>
+        <div class="from-group">
+            <label>Sở thích</label>
+            <fieldset class="border border-secondary p-3">
+                <input value="docsach" type="checkbox" ng-model="docsach"> Đọc sách &nbsp;
+                <input value="dulich" type="checkbox" ng-model="dulich"> Du lịch &nbsp;
+                <input value="amthuc" type="checkbox" ng-model="amthuc"> Âm nhạc 
+                <input value="khac" type="checkbox" ng-model="khac"> Khác 
+                <em ng-if="!docsach && !dulich && !amthuc && !khac" class="text-danger h6"><br>Sở thích là gì ?</em>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <label>Quốc tịch</label>
+            <select name="quoctich" class="form-control bg-secondary text-white" ng-model="quoctich">
+                <option value="0" required>Chọn Quốc tịch</option>
+                <option value="1" required>Việt Nam</option>
+                <option value="3" required>Hàn Quốc</option>
+                <option value="3" required>Nhật Bản</option>
+            </select>
+            <em ng-if ="!quoctich || quoctich==0"class="text-danger h6">Hãy chọn một quốc tịch !</em> 
+       
+        <div class="form-group">
+                     <label for="text">Ghi chú: </label>
+					<textarea name="text" id="" cols="46" rows="5" id="note" maxlength="200"  ng-model="text"  required minlength="2" maxlength="30"></textarea>
+                    <em ng-if="frm.text.$invalid" class="text-danger h6">Vui lòng nhập ghi chú !!</em>
+                </div>
+        <div class="form-group">
+            <button class="btn btn-info">Đăng ký</button>
+            <br>
+             <em ng-if="frm.$valid" class="text-danger h3">Bạn đã đăng ký thành công</em>
+        </div>
+
+
+
+    </form>
+<!-- -------- testiml -->
+   
+<!-- footer -->
+<footer>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Dowload Our App</h3>
+        <p>Download App for Android and Ios mobile phone.</p>
+        <div class="app-logo">
+          <img src="images/play-store.png" >
+          <img src="images/app-store.png" >
+        </div>
+      </div>
+      <div class="footer-col-2">
+    <img src ="images/fpt-shop.png">
+        <p>Địa chỉ: 5 Phạm Thế Hiển Quận 8</p>
+        <p>Điện thoại: 123465789</p>
+      </div>
+      <div class="footer-col-3">
+        <h3>Dịch vụ</h3>
+       <ul>
+         <li>Giảm giá</li>
+         <li>Bài viết</li>
+         <li>Chính sách trả</li>
+         <li>Liên kết</li>
+       </ul>
+      </div>
+      <div class="footer-col-4">
+        <h3>Follow us</h3>
+       <ul>
+         <li>Facebook</li>
+         <li>Twitter</li>
+         <li> Instargam </li>
+         <li>YouTube</li>
+       </ul>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <p class="copyright">Copyright 2021 by Tran Hai Dong</p>
+</div>
+
+
+
+</footer>
+
+</body>
+</html>
+
+<script>
+  app=angular.module("b3",[]);
+  app.controller("ctr1",xuly);
+  function xuly($scope){
+
+  }
+
+</script>
